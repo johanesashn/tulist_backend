@@ -10,7 +10,7 @@ const PORT = process.env.PORT
 const app = express()
 // in local, other one is using atlas
 // mongoose.connect("mongodb://127.0.0.1:27017/todoList", {
-mongoose.connect("mongodb+srv://johanes:123@cluster0.doz2i6i.mongodb.net/todoList?retryWrites=true&w=majority", {
+mongoose.connect(`mongodb+srv://${USERNAME}:${PASSWORD}@cluster0.doz2i6i.mongodb.net/todoList?retryWrites=true&w=majority`, {
     useNewUrlParser: true, 
     useUnifiedTopology: true,
 })
